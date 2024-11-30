@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+
+.dark .navbar li{
+    color: aliceblue;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    width: 100%;
+    background: #ffffff;
+    
+    transition: 0.5s;
+}
+.container.dark{
+     background: rgb(208, 229, 238);
+
+    
+     transition: 0.5s;
+
+}
+.dark .explore-list .explore-list-item p{
+    color: #222;
+    transition: 1s;
+}
+
+
+.app{
+    width: 80%;
+    margin: auto;
+    /* background-color: aqua; */
+}
+
+.dark .color{
+    color: aliceblue;
+}
+
+
+
+@keyframes fadeIn {
+0%{
+    opacity: 0;
+}    
+100%{
+opacity: 1;
+}
+}
+
+
+#preloader{
+    background: #000 ;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 20%;
+    
+}
+/* From Uiverse.io by alexruix */ 
+.loader {
+    width: 112px;
+    height: 112px;
+    margin-left: -180px;
+  }
+  
+  .box1,
+  .box2,
+  .box3 {
+    border: 16px solid #f5f5f5;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+  }
+  
+  .box1 {
+    width: 112px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
+    animation: abox1 4s 1s forwards ease-in-out infinite;
+  }
+  
+  .box2 {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+    animation: abox2 4s 1s forwards ease-in-out infinite;
+  }
+  
+  .box3 {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
+    animation: abox3 4s 1s forwards ease-in-out infinite;
+  }
+  
+  @keyframes abox1 {
+    0% {
+      width: 112px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 0px;
+    }
+  
+    12.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 0px;
+    }
+  
+    25% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 0px;
+    }
+  
+    37.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 0px;
+    }
+  
+    50% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 0px;
+    }
+  
+    62.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 0px;
+    }
+  
+    75% {
+      width: 48px;
+      height: 112px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  
+    87.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  
+    100% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  }
+  
+  @keyframes abox2 {
+    0% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  
+    12.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  
+    25% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  
+    37.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  
+    50% {
+      width: 112px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  
+    62.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 64px;
+    }
+  
+    75% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 64px;
+    }
+  
+    87.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 64px;
+    }
+  
+    100% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 64px;
+    }
+  }
+  
+  @keyframes abox3 {
+    0% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 64px;
+    }
+  
+    12.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 0px;
+      margin-left: 64px;
+    }
+  
+    25% {
+      width: 48px;
+      height: 112px;
+      margin-top: 0px;
+      margin-left: 64px;
+    }
+  
+    37.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 64px;
+    }
+  
+    50% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 64px;
+    }
+  
+    62.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 64px;
+    }
+  
+    75% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 64px;
+    }
+  
+    87.5% {
+      width: 48px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 64px;
+    }
+  
+    100% {
+      width: 112px;
+      height: 48px;
+      margin-top: 64px;
+      margin-left: 0px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
